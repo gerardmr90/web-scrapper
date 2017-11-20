@@ -5,6 +5,6 @@ final class URLValidatorTest extends TestCase
 {
     public function testShouldReturnValidURLFromCompanyName()
     {
-        $this->assertEquals('https://www.canddi.com', URLValidator::findValidURLFromCompanyName('canddi'));
+        $this->assertEquals('http://www.canddi.com', URLValidator::findValidURLFromCompanyName('canddi'));
     }
 }
