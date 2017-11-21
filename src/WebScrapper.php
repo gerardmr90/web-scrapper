@@ -17,4 +17,8 @@ final class WebScrapper
             return 'Email address not found';
         }
     }
+
+    public static function getPostCodeFromWebsite($url)
+    {
+    }
 }
