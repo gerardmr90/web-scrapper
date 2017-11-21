@@ -12,4 +12,9 @@ final class WebScrapperTest extends TestCase
     {
         $this->assertEquals('M1 1FT', WebScrapper::getPostCodeFromWebsite('http://www.canddi.com'));
     }
+
+    public function testShouldReturnPhoneNumber()
+    {
+        $this->assertEquals('+44 161 414 1080', WebScrapper::getPhoneNumberFromWebsite('http://www.canddi.com'));
+    }
 }

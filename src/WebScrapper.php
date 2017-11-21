@@ -32,4 +32,8 @@ final class WebScrapper
             return 'Postcode not found';
         }
     }
+
+    public static function getPhoneNumberFromWebsite($url)
+    {
+    }
 }
