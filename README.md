@@ -8,6 +8,10 @@ These instructions will get you a copy of the project up and running on your loc
 ```
 PHP 5.6
 ```
+### Execution
+```
+php src/app.php [email]
+```
 ### Running the tests
 ```
 php phpunit.phar --bootstrap src/CompanyExtractor.php tests/CompanyExtractorTest.php

@@ -8,12 +8,12 @@ final class URLValidator
         $counter = 0;
 
         do {
-            $url = 'http://www.'.$company.DOMAIN_EXTENSIONS[$counter];
+            $url = 'https://www.'.$company.DOMAIN_EXTENSIONS[$counter];
             $headers = @get_headers($url);
             $counter++;
-        } while ($counter<sizeof(DOMAIN_EXTENSIONS) && (!$headers || $headers[0] != "HTTP/1.1 200 OK"));
+        } while ($counter<sizeof(DOMAIN_EXTENSIONS) && $headers[0] != "HTTP/1.0 200 OK" && $headers[0] != "HTTP/1.1 200 OK");
 
-        if ($headers[0] != "HTTP/1.1 200 OK") {
+        if ($headers[0] != "HTTP/1.1 200 OK" && $headers[0] != "HTTP/1.0 200 OK") {
             return 'Website not found';
         } else {
             return $url;
