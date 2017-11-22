@@ -1,5 +1,5 @@
 <?php
-const DOMAIN_EXTENSIONS = ['.com', '.de', '.net','.co.uk', '.org', '.info', '.nl', '.eu', '.es'];
+const DOMAIN_EXTENSIONS = ['.com/', '.de/', '.net/','.co.uk/', '.org/', '.info/', '.nl/', '.eu/', '.es/'];
 
 final class URLValidator
 {
