@@ -11,6 +11,5 @@ final class WebScrapper
             $info = array_unique($matches[0]);
             return implode(',', $info);
         }
-        return 'Information not found';
     }
 }
